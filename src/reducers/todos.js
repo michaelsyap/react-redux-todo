@@ -5,15 +5,15 @@ import {
   TOGGLE_TODO,
   SET_VISIBILITY_FILTER,
   VisibilityFilters
-} from './actions/todos';
+} from 'actions/todos';
 
 const { SHOW_ALL } = VisibilityFilters;
 
 
-const initialState = {
-  visibilityFilter: VisibilityFilters.SHOW_ALL,
-  todos: []
-};
+// const initialState = {
+//   visibilityFilter: VisibilityFilters.SHOW_ALL,
+//   todos: []
+// };
 
 function visibilityFilter(state = SHOW_ALL, action) {
   switch (action.type) {
