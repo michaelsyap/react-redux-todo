@@ -9,6 +9,7 @@ import {
 
 const { SHOW_ALL } = VisibilityFilters;
 
+let id = 0;
 
 // const initialState = {
 //   visibilityFilter: VisibilityFilters.SHOW_ALL,
@@ -30,6 +31,7 @@ function todos(state = [], action) {
       return [
         ...state,
         {
+          id: id++,
           text: action.text,
           completed: false
         }
